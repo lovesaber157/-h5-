@@ -1,0 +1,41 @@
+	#h1{
+		margin: 0;
+		font-size: 24px;
+		font-weight: bolder;
+		small{
+			font-size: 15px;
+			display: inline-block;
+			padding-left: 4px;
+			font-weight: 300;
+		}
+	}
+	.content-header{
+		display: none;
+		position: relative;
+		padding: 15px 15px 0 15px;
+	}
+	.content{
+		@media screen and(max-width:960px){
+			width: 100%;
+			padding: 0;
+		}
+		width: 80%;
+		min-height: 250px;
+		padding: 15px;
+		margin: 0 auto;
+		padding-bottom: 150px !important;
+	}
+	.row{
+		margin: 0 -15px;
+		&::after{
+			content: "";
+			clear: both;
+			display: block;
+		}
+	}
+	.col-12{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}

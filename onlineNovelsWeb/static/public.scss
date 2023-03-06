@@ -1,0 +1,172 @@
+.card{
+	margin-left: 0;
+	margin-right: 0;
+	zoom:1;
+	display: block;
+	border-radius: 6rpx;
+	border: 1rpx solid #eee;
+	position: relative;
+	margin-top: 20rpx;
+	padding: 10rpx;
+	transition: all 0.2s ease-in-out;
+	background: white;
+}
+.card:hover{
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+	position: relative;
+}
+.card-head{
+	line-height: 30rpx;
+	text-align: left;
+	color: gray;
+	font-weight: 600;
+	font-size: 34rpx;
+	height: 30rpx;
+}
+.right-tag{
+	float: right;
+	font-size: 20rpx;
+	color: grey;
+	cursor: pointer;
+	padding-bottom: 10rpx;
+	margin-right: 18rpx;
+}
+hr{
+	height: 1rpx;
+	clear: both;
+	margin: 10rpx 0;
+	border: 0;
+}
+.lay-tab{
+	margin: 20rpx 0;
+	text-align: left;
+}
+.lay-tab-brief{
+	.lay-tab-title{
+		padding: 0;
+		position: relative;
+		left: 0;
+		height: 80rpx;
+		white-space: nowrap;
+		font-size: 0;
+		border-bottom: 1px solid #e6e6e6;
+		transition: all .2s;
+		li{
+			// list-style: none;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 30rpx;
+			line-height: 80rpx;
+			min-width: 130rpx;
+			padding: 0 30rpx;
+			cursor: pointer;
+		}
+		.lay-this{
+			color: #009688;
+			border-bottom: 2px solid #009688;
+		}
+	}
+}
+.layui-bg-green{
+	background-color: #009688 !important;
+}
+.layui-bg-gray{
+	color: #666 !important;
+	background-color: #eee !important;
+}
+.time{
+	font-size: 20rpx;
+	-webkit-transform: scale(0.8);
+	line-height: 25rpx;
+	margin-left: 20rpx;
+}
+a:hover{
+	color: #777;
+	cursor: pointer;
+}
+.update-top-titles{
+	.lay-this{
+		color: #000 !important; 
+	}
+}
+.new-update-box{
+	float: none;
+	width: 100%;
+}
+.update-cards{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	.card-item{
+		font-size: 3vm !important;
+		width: 9em;
+		height: 13em;
+		margin: 0 0.2em 1em 0.2em;
+		display: grid;
+		text-align: center;
+		grid-template-rows: 8fr 4fr 1fr;
+		.card-image-box{
+			height: 8em;
+			.card-image{
+				width: 9em;
+				height: 12em;
+				border-radius: 0.6em;
+			}
+		}
+		.card-info{
+			position: relative;
+			height: 4em;
+			padding: 0.6em 0.2em 0.2em 0.2em;
+			display: flex;
+			color: white;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			flex-direction: column;
+			background-image: linear-gradient(0deg, black, transparent);
+			border-radius: 0em 0em 0.6em 0.6em;
+			.update-store-title{
+				height: 1.5em;
+				font-size: 1em;
+				font-weight: 600;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.update-store-chapter{
+				height: 2.5em;
+				font-size: 0.8em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				line-height: 1.2em;
+			}
+		}
+	}
+}
+.content{
+	min-height: 500rpx;
+	padding: 30rpx;
+	padding:0 30rpx;
+	margin: 0 auto;
+	width: 100%;
+}
+.lay-tab-content{
+	padding: 20rpx;
+	margin: 0;
+	// .lay-show{
+	// 	display: block;
+	// }
+	@media screen and (max-width:1920rpx){
+		.list-item-one,.list-item-two{
+			float: left;
+			width: 100%;
+		}
+	}
+	.list-item-one{
+		float: left;
+		width: 49%;
+	}
+	.list-item-two{
+		float: right;
+		width: 49%;
+	}
+}
