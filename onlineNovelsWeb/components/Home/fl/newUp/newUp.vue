@@ -15,7 +15,7 @@
 					<a @click="checkStore()">
 						<view class="card-item">
 							<view class="card-image-box">
-								<image :src="item.imageSrc" class="card-image"></image>
+								<image :src="'/api/image/'+item.imageName" class="card-image"></image>
 							</view>
 							<view class="card-info">
 								<view class="update-store-title">
@@ -36,7 +36,7 @@
 					<a @click="checkStore()">
 						<view class="card-item">
 							<view class="card-image-box">
-								<image :src="item.imageSrc" class="card-image"></image>
+								<image :src="'/api/image/'+item.imageName" class="card-image"></image>
 							</view>
 							<view class="card-info">
 								<view class="update-store-title">
@@ -66,54 +66,78 @@
 					{
 						storeTitle:"转生为魔剑",
 						upDateChapter:"web本篇 web第1149章 高等级冒险者们",
-						imageSrc:require("@/static/photos/storeimg01.jpg"),
+						imageName:"storeimg01.jpg",
 						upDateTime:"16:04:20"
 					},
 					{
 						storeTitle:"转生成小小妖精",
 						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
-						imageSrc:require("@/static/photos/storeimg05.jpg"),
+						imageName:"storeimg05.jpg",
 						upDaterTime:"08:00:03"
 					},
 					{
 						storeTitle:"转生成小小妖精",
 						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
-						imageSrc:require("@/static/photos/storeimg05.jpg"),
+						imageName:"storeimg05.jpg",
+						upDaterTime:"08:00:03"
+					},
+					{
+						storeTitle:"双星的天剑使",
+						upDateChapter:"第二卷 第三章 3.13初稿",
+						imageName:"other-230222221417-DnpE.jpg",
 						upDaterTime:"08:00:03"
 					},
 					{
 						storeTitle:"转生成小小妖精",
 						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
-						imageSrc:require("@/static/photos/storeimg05.jpg"),
+						imageName:"storeimg05.jpg",
 						upDaterTime:"08:00:03"
-					}
+					},
+					{
+						storeTitle:"转生成小小妖精",
+						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
+						imageName:"storeimg05.jpg",
+						upDaterTime:"08:00:03"
+					},
 				],
 				//原创
 				originalStory:[
 					{
 						storeTitle:"即便如此 我们……",
 						upDateChapter:"来自〇〇的选召 第十二章 学园活动--2",
-						imageSrc:require("@/static/photos/storeimg06.jpg"),
+						imageName:"storeimg06.jpg",
 						upDaterTime:"15:56:25"
 					},
 					{
 						storeTitle:"来成为年度最垃圾的恶役千金吧？我才不要！",
 						upDateChapter:"正文 第一百二十一幕 夜语",
-						imageSrc:require("@/static/photos/storeimg07.png"),
+						imageName:"storeimg07.png",
 						upDaterTime:"12:18:26"
 					},
 					{
 						storeTitle:"惡女之復仇~我是反派千金的替身~",
 						upDateChapter:"卷一 簡單的異世界攻略法 (61) 從此我們開始了互相較勁 ",
-						imageSrc:require("@/static/photos/storeimg08.jpg"),
+						imageName:"storeimg08.jpg",
 						upDaterTime:"12:18:26"
 					},
 					{
 						storeTitle:"编织谎言的吸血鬼与被遗弃的世界",
 						upDateChapter:"Part.2 『不夜之城的摇篮曲』 Stage.3 芙莱尔",
-						imageSrc:require("@/static/photos/storeimg09.jpg"),
+						imageName:"storeimg09.jpg",
 						upDaterTime:"12:18:26"
-					}
+					},
+					{
+						storeTitle:"编织谎言的吸血鬼与被遗弃的世界",
+						upDateChapter:"Part.2 『不夜之城的摇篮曲』 Stage.3 芙莱尔",
+						imageName:"storeimg09.jpg",
+						upDaterTime:"12:18:26"
+					},
+					{
+						storeTitle:"编织谎言的吸血鬼与被遗弃的世界",
+						upDateChapter:"Part.2 『不夜之城的摇篮曲』 Stage.3 芙莱尔",
+						imageName:"storeimg09.jpg",
+						upDaterTime:"12:18:26"
+					},
 				]
 				//随机推荐
 			};

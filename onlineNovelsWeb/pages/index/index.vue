@@ -17,11 +17,16 @@
 			}
 		},
 		onLoad() {
-
+			getUserInfo:{
+				uni.request({
+					url:"/api/userInfo",
+					method:"POST",
+					success(res) {
+						console.log(res.data)
+					}
+				})
+			}
 		},
-		methods: {
-
-		}
 	}
 </script>
 

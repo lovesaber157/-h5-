@@ -24,14 +24,16 @@
 							</span>
 							<span class="message-bell-btn">
 								<text class="iconfont icon-fuhao-"></text>
+								
 							</span>
 						</view>
 					</li>
-					<li class="dropdown user user-menu">
+					<li :class="userMenuClassName" @click="toShowDMenu()">
 						<a class="dropdown-toggle">
 							<image src="@/static/photos/other-220315104645-DNdv.jpg" class="user-image"></image>
 							<text class="hidden-xs">NPC001</text>
 						</a>
+						<dropdown-menu></dropdown-menu>
 					</li>
 				</ul>
 			</view>
@@ -40,19 +42,29 @@
 </template>
 
 <script>
+	import dropdownMenu from "@/components/mainHeader/dropdownMenu/dropdownMenu.vue"
 	export default {
 		name:"mainHeader",
 		props:{
 			changeClassName:Function
 		},
+		components:{
+			dropdownMenu
+		},
 		data() {
 			return {
 				isShow:false,
-				
+				userMenuClassName:"dropdown user user-menu"
 			};
 		},
 		methods:{
-			
+			toShowDMenu(){
+				if(this.userMenuClassName==="dropdown user user-menu open"){
+					this.userMenuClassName="dropdown user user-menu"
+				}else{
+					this.userMenuClassName="dropdown user user-menu open"
+				}
+			}
 		}
 	}
 </script>
@@ -159,7 +171,7 @@
 				background: rgba(0, 0, 0, 0.1);
 			}
 			.nav>li>a{
-				color: #fff;
+				padding-bottom: 40rpx;
 			}
 		}
 		.sidebar-toggle{
@@ -218,6 +230,7 @@
 			position: relative;
 			display: block;
 			list-style: none;
+			cursor: pointer;
 			a{
 				position: relative;
 				display: block;
@@ -279,6 +292,9 @@
 	    text-align: center;
 	    margin-left: 10px;
 	}
+	.message-bell-btn:hover{
+		color: #999;
+	}
 	.message-bell{
 		.badge-dot{
 			top: -10px;
@@ -310,6 +326,15 @@
 			float: right;
 		}
 	}
+	
+	.user-menu.open{
+		.dropdown-menu{
+			display: block;
+		}
+		background: rgba(0,0,0,0.1);
+		color: #f6f6f6;
+	}
+	
 	//适配两种屏幕 min-width:768px
 	.wrapper.sidebar-collapse{
 		@media (min-width:768px) {

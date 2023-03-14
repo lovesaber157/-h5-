@@ -34,4 +34,12 @@
 		transition: transform .3s ease-in-out,margin .3s ease-in-out;
 		margin-left: 230px;
 	}
+	//适配两种屏幕 min-width:768px
+	.wrapper.sidebar-collapse{
+		@media (min-width:768px) {
+			.main-footer{
+				margin-left: 50px;
+			}
+		}
+	}
 </style>

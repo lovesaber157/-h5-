@@ -22,11 +22,6 @@
 	export default {
 		name:"Home",
 		components:{imgSwiper,fl,fr},
-		data() {
-			return {
-				
-			};
-		}
 	}
 </script>
 

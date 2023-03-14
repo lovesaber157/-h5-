@@ -6,12 +6,12 @@
 		<section class="content">
 			<view class="row">
 				<view class="col-12">
-					<nv-info-box></nv-info-box>
+					<nv-info-box :novelDetail="novelDetail"></nv-info-box>
 				</view>
 			</view>
 			<view class="row">
 				<view class="col-12">
-					<nv-chapters></nv-chapters>
+					<nv-chapters :novelDetail="novelDetail"></nv-chapters>
 				</view>
 			</view>
 			<view class="row">
@@ -35,12 +35,24 @@
 		components:{nvInfoBox,nvChapters,nvComment},
 		data() {
 			return {
-				
+				novelDetail:{}
 			};
+		},
+		created() {
+			uni.request({
+				url:"/api/getNovelDetail",
+				method:"POST",
+				data:{
+					novelId:0
+				},
+				success(res) {
+					this.novelDetail=res.data
+				}
+			})
 		}
 	}
 </script>
 
 <style lang="scss">
-	@import "@/static/scss/public.scss"
+	@import "@/static/scss/public.scss";
 </style>

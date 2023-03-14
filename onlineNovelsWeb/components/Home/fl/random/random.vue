@@ -13,7 +13,7 @@
 				<a>
 					<view class="card-item">
 						<view class="card-image-box">
-							<image :src="item.imageSrc" class="card-image"></image>
+							<image :src="'/api/image/'+item.imageName" class="card-image"></image>
 						</view>
 						<view class="card-info">
 							<view class="update-store-title">
@@ -39,25 +39,37 @@
 					{
 						storeTitle:"我在星際國家當惡德領主",
 						upDateChapter:"WEB 第六章 88. 序章 ",
-						imageSrc:require("@/static/photos/storeimg04.jpg"),
+						imageName:"storeimg04.jpg",
 						upDateTime:"16:04:20"
 					},
 					{
 						storeTitle:"Nostalgia world online",
 						upDateChapter:"web第七章 第七章 第七話 去大空洞探險吧 ⑥",
-						imageSrc:require("@/static/photos/storeimg10.jpeg"),
+						imageName:"storeimg10.jpeg",
 						upDaterTime:"08:00:03"
 					},
 					{
 						storeTitle:"转生成小小妖精",
 						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
-						imageSrc:require("@/static/photos/storeimg05.jpg"),
+						imageName:"storeimg05.jpg",
 						upDaterTime:"08:00:03"
 					},
 					{
 						storeTitle:"转生成小小妖精",
 						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
-						imageSrc:require("@/static/photos/storeimg05.jpg"),
+						imageName:"storeimg05.jpg",
+						upDaterTime:"08:00:03"
+					},
+					{
+						storeTitle:"转生成小小妖精",
+						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
+						imageName:"storeimg05.jpg",
+						upDaterTime:"08:00:03"
+					},
+					{
+						storeTitle:"转生成小小妖精",
+						upDateChapter:"web 第三章 魔物狂潮 072 藥水",
+						imageName:"storeimg05.jpg",
 						upDaterTime:"08:00:03"
 					},
 				]

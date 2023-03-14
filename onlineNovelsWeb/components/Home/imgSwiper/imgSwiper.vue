@@ -1,16 +1,13 @@
 <template>
-	<swiper class="swiper">
+	<swiper class="swiper" autoplay circular>
 		<swiper-item class="item">
-			<image src="@/static/photos/HomeInfo.jpg"></image>
+			<image src="/api/image/Home1.jpg"></image>
 		</swiper-item>
 		<swiper-item class="item">
-			<image src="@/static/photos/Home1.jpg"></image>
+			<image src="/api/image/Home2.jpg"></image>
 		</swiper-item>
 		<swiper-item class="item">
-			<image src="@/static/photos/Home2.jpg"></image>
-		</swiper-item>
-		<swiper-item class="item">
-			<image src="@/static/photos/Home3.jpg"></image>
+			<image src="/api/image/Home3.jpg"></image>
 		</swiper-item>
 	</swiper>	
 </template>
@@ -18,11 +15,6 @@
 <script>
 	export default {
 		name:"imgSwiper",
-		data() {
-			return {
-				
-			};
-		}
 	}
 </script>
 

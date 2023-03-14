@@ -68,6 +68,13 @@
 				forumList:[]
 			};
 		},
+		methods:{
+			goToForum(forumId){
+				uni.navigateTo({
+					url:"/pages/forumDetail/forumDetail?forumId="+forumId
+				})
+			}
+		},
 		created() {
 			uni.request({
 				url:"/api/ForumList",
